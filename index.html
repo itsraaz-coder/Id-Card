@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="back">
+        <form>
+            <h3>Please fill-in the form</h3>
+            <label>Full Name</label>
+            <input type="text" id="inName" placeholder="Your name...">
+            <label>College Name</label>
+            <input type="text" id="inBirth" placeholder="College Name">
+            <label>Event</label>
+            <input type="text" id="inField" placeholder=" ">
+            <label>Designation</label>
+            <input type="text" id="inNum" placeholder=" ">
+            <label for="file" class="upload">Upload an Image</label>
+            <br>
+            <span>Upload Your photo</span>
+            <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+        </form>
+
+
+
+        <div class="container" background-color="white">
+            <button type="submit" id="preview" style="margin: 20px;">Preview</button>
+            <canvas id="result" class="card">
+
+                <header id="head">
+                  
+                  <div class="camp" >
+                    <img src="img/logo.png" id="logo1">
+                    <h3>PCE Club Association</h3>
+                    <span>Id Card</span>
+                  
+                    
+                  </div>  
+                  <img src="img/logo.png" id="logo">
+                
+               
+
+                 <div class="content" >
+                    <img src="img/logo.png" id="imgDisplayed">
+                    <ul>
+                      <li id="name">Name:</li>
+                      <li id="birth">College Name</li>
+                      <li id="fieldYear">Event</li>
+                      <li id="num">Designation</li>
+                    </ul>
+                 </div>
+
+                </header>
+
+            </canvas>
+            <button id="down">Download</button>
+        </div>
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>
